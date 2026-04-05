@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPA VPN | Soberania de Dados e Infraestrutura Brasileira</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #020617; }
+        .btn-sovereign {
+            background: #2563eb;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+        .btn-sovereign:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px -10px rgba(37, 99, 235, 0.5);
+        }
+        .card-clean {
+            background: rgba(255, 255, 255, 0.02);
+            border-left: 2px solid rgba(37, 99, 235, 0.1);
+            padding: 3.5rem 2rem;
+        }
+    </style>
+</head>
+<body class="text-slate-300 min-h-screen flex flex-col items-center selection:bg-blue-500/30">
+
+    <nav class="w-full max-w-5xl p-10 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <span class="text-2xl font-800 tracking-tighter text-white uppercase italic">Opa<span class="text-blue-500 not-italic">vpn</span></span>
+        </div>
+        <div class="flex items-center gap-3 bg-white/5 px-4 py-2 rounded-full border border-white/5">
+            <span class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
+            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest italic">Infraestrutura 100% Brasil</span>
+        </div>
+    </nav>
+
+    <main class="flex-1 flex flex-col justify-center items-center text-center px-6 max-w-4xl py-12 md:py-24">
+        
+        <h1 class="text-6xl md:text-8xl font-800 text-white mb-8 tracking-tighter leading-[0.95]">
+            Sua conexão. <br/> <span class="text-blue-600">Sua soberania.</span>
+        </h1>
+        
+        <p class="text-slate-400 text-lg md:text-xl mb-12 max-w-2xl leading-relaxed font-light">
+            A OPA VPN garante que os dados brasileiros permaneçam em território nacional. Proteção de alto nível com infraestrutura local, focada em <strong>privacidade absoluta</strong> e <strong>latência mínima</strong>.
+        </p>
+
+        <div class="w-full max-w-sm">
+            <a href="https://forms.gle/BKwFK51W6bWm8AWy5" target="_blank" class="btn-sovereign w-full text-white px-10 py-5 rounded-2xl font-bold text-lg shadow-2xl">
+                Garantir Acesso Prioritário
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+            </a>
+            <p class="mt-6 text-[10px] text-slate-600 font-bold uppercase tracking-[0.3em]">
+                Inscrição rápida via Google Forms
+            </p>
+        </div>
+        
+    </main>
+
+    <section class="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-0 px-8 py-20">
+        
+        <div class="card-clean">
+            <h3 class="text-white font-bold text-lg mb-4 uppercase tracking-tighter">Soberania de Dados</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">
+                Lutamos para que as informações produzidas no Brasil permaneçam sob jurisdição nacional. Sua identidade digital não precisa cruzar oceanos.
+            </p>
+        </div>
+
+        <div class="card-clean border-blue-500/30 bg-white/[0.03]">
+            <h3 class="text-blue-500 font-bold text-lg mb-4 uppercase tracking-tighter">Foco em Território Nacional</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+                Infraestrutura 100% brasileira. Otimizamos rotas internas para entregar a menor latência do país, conectando você sem intermediários externos.
+            </p>
+        </div>
+
+        <div class="card-clean">
+            <h3 class="text-white font-bold text-lg mb-4 uppercase tracking-tighter">Privacidade Sem Rastros</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">
+                Nenhum dado processado é armazenado ou vendido. Nossa arquitetura é desenhada para a volatilidade total da informação.
+            </p>
+        </div>
+
+    </section>
+
+    <footer class="w-full py-16 border-t border-white/5 flex flex-col items-center gap-4 text-center">
+        <div class="text-slate-700 text-[10px] font-extrabold uppercase tracking-[0.5em]">
+            OPA VPN // Infraestrutura Brasileira Independente
+        </div>
+        <div class="text-[9px] text-slate-800 uppercase tracking-widest font-bold">
+            contato@opavpn.com.br
+        </div>
+    </footer>
+
+</body>
+</html>
