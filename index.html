@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OPAVPN | Infraestrutura de Baixa Latência no Brasil</title>
+    <title>OPAVPN | Infraestrutura Segura e Estável no Brasil</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
@@ -12,13 +12,10 @@
             background: #2563eb;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
+            align-items: center; justify-content: center; gap: 12px;
         }
         .btn-sovereign:hover {
-            background: #1d4ed8;
-            transform: translateY(-2px);
+            background: #1d4ed8; transform: translateY(-2px);
             box-shadow: 0 15px 30px -10px rgba(37, 99, 235, 0.5);
         }
         .card-plan {
@@ -26,10 +23,7 @@
             border: 1px solid rgba(255, 255, 255, 0.05);
             transition: all 0.3s ease;
         }
-        .card-plan:hover {
-            border-color: rgba(37, 99, 235, 0.5);
-            background: rgba(255, 255, 255, 0.05);
-        }
+        .card-plan:hover { border-color: rgba(37, 99, 235, 0.5); background: rgba(255, 255, 255, 0.05); }
         .featured-plan {
             border: 2px solid #2563eb !important;
             background: rgba(37, 99, 235, 0.05) !important;
@@ -37,8 +31,7 @@
         }
         .step-number {
             background: linear-gradient(135deg, #2563eb, #00F5FF);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
         }
     </style>
 </head>
@@ -51,47 +44,54 @@
         <div class="hidden md:flex items-center gap-6">
             <a href="#como-funciona" class="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-blue-500 transition">Como Funciona?</a>
             <div class="flex items-center gap-3 bg-white/5 px-4 py-2 rounded-full border border-white/5">
-                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest italic">Status: SP (Magalu Cloud)</span>
+                <span class="w-2 h-2 bg-blue-500 rounded-full animate-pulse shadow-[0_0_10px_#2563eb]"></span>
+                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest italic tracking-wider">Criptografia Ativa</span>
             </div>
         </div>
     </nav>
 
-    <main class="flex-1 flex flex-col justify-center items-center text-center px-6 max-w-5xl py-12 md:py-20"> 
+    <main class="flex-1 flex flex-col justify-center items-center text-center px-6 max-w-5xl py-12 md:py-20">
         <h1 class="text-6xl md:text-8xl font-800 text-white mb-8 tracking-tighter leading-[0.95]">
-            Sua conexão. <br/> 
+            Sua conexão. <br/> 
             <span class="inline-block bg-gradient-to-r from-[#009b3a] via-[#fedf00] to-[#2563eb] bg-clip-text text-transparent opacity-95">
                 Sua soberania.
             </span>
         </h1>
-
-        <p class="text-slate-400 text-lg md:text-xl mb-16 max-w-2xl leading-relaxed font-light">
-            Infraestrutura 100% nacional para quem não aceita instabilidade. <br class="hidden md:block"/>
-            <span class="text-white font-semibold">Estabilidade total para navegar, trabalhar e se divertir."</span>
+        
+        <p class="text-slate-400 text-lg md:text-xl mb-6 max-w-2xl leading-relaxed font-light">
+            Blindagem digital com infraestrutura 100% brasileira. <br class="hidden md:block"/>
+            <span class="text-white font-semibold italic">Navegue de forma invisível e protegida.</span>
         </p>
+        
+        <div class="flex items-center gap-2 mb-16 bg-blue-500/10 px-4 py-1.5 rounded-full border border-blue-500/20">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+            <span class="text-[10px] md:text-xs font-bold text-blue-400 uppercase tracking-widest">Criptografia de Nível Militar • Sem Registros de Logs</span>
+        </div>
 
         <div id="planos" class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full mb-12">
             <div class="card-plan rounded-3xl p-8 flex flex-col text-left">
                 <span class="text-blue-500 font-bold text-xs uppercase tracking-widest mb-4">Opa! Lite</span>
                 <h4 class="text-white text-4xl font-800 mb-2">50 GB</h4>
-                <p class="text-slate-500 text-sm mb-6">Navegação segura e latência reduzida em sistemas críticos.</p>
+                <p class="text-slate-500 text-sm mb-6">Proteção essencial para seu dia a dia digital.</p>
                 <div class="text-white text-2xl font-bold mb-8">R$ 16,90<span class="text-sm text-slate-500 font-normal">/mês</span></div>
                 <ul class="text-xs text-slate-500 space-y-2 mb-8 flex-1">
-                    <li class="flex items-center gap-2">✓ Sem taxas de cancelamento</li>
-                    <li class="flex items-center gap-2">✓ Renovação mensal</li>
+                    <li class="flex items-center gap-2">✓ Túnel criptografado</li>
+                    <li class="flex items-center gap-2">✓ Proteção em Wi-Fi público</li>
                 </ul>
                 <a href="https://www.asaas.com/c/ktvsyggsl0rj29qo" class="w-full bg-white/5 hover:bg-white/10 text-white py-4 rounded-xl text-center font-bold transition">Escolher Plano</a>
             </div>
 
             <div class="card-plan featured-plan rounded-3xl p-8 flex flex-col text-left relative">
-                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-[10px] font-bold px-4 py-1 rounded-full uppercase tracking-tighter">Mais Escolhido</div>
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-[10px] font-bold px-4 py-1 rounded-full uppercase tracking-tighter">Mais Seguro</div>
                 <span class="text-blue-400 font-bold text-xs uppercase tracking-widest mb-4">Opa! Pro</span>
                 <h4 class="text-white text-4xl font-800 mb-2">100 GB</h4>
-                <p class="text-slate-300 text-sm mb-6 font-medium">O equilíbrio ideal para produtividade e alta demanda.</p>
+                <p class="text-slate-300 text-sm mb-6 font-medium">Blindagem completa para trabalho e lazer.</p>
                 <div class="text-white text-2xl font-bold mb-8">R$ 24,90<span class="text-sm text-slate-500 font-normal">/mês</span></div>
-                <ul class="text-xs text-slate-500 space-y-2 mb-8 flex-1">
-                    <li class="flex items-center gap-2">✓ Sem taxas de cancelamento</li>
-                    <li class="flex items-center gap-2">✓ Renovação mensal</li>
+                <ul class="text-xs text-slate-300 space-y-2 mb-8 flex-1">
+                    <li class="flex items-center gap-2">✓ IP Brasileiro Privado</li>
+                    <li class="flex items-center gap-2">✓ Anonimato de navegação</li>
                 </ul>
                 <a href="https://www.asaas.com/c/1shr5dys6luq0o5p" class="btn-sovereign w-full text-white py-4 rounded-xl text-center font-bold">Assinar Plano</a>
             </div>
@@ -99,46 +99,94 @@
             <div class="card-plan rounded-3xl p-8 flex flex-col text-left">
                 <span class="text-blue-500 font-bold text-xs uppercase tracking-widest mb-4">Opa! Ultra</span>
                 <h4 class="text-white text-4xl font-800 mb-2">200 GB</h4>
-                <p class="text-slate-500 text-sm mb-6">Alta performance para fluxos intensos de dados e streaming.</p>
+                <p class="text-slate-500 text-sm mb-6">O máximo de dados com segurança inabalável.</p>
                 <div class="text-white text-2xl font-bold mb-8">R$ 39,90<span class="text-sm text-slate-500 font-normal">/mês</span></div>
                 <ul class="text-xs text-slate-500 space-y-2 mb-8 flex-1">
-                    <li class="flex items-center gap-2">✓ Sem taxas de cancelamento</li>
-                    <li class="flex items-center gap-2">✓ Renovação mensal</li>
+                    <li class="flex items-center gap-2">✓ Segurança Avançada</li>
+                    <li class="flex items-center gap-2">✓ Sem contratos ou fidelidade</li>
                 </ul>
                 <a href="https://www.asaas.com/c/jwdyf6hng89hhl1n" class="w-full bg-white/5 hover:bg-white/10 text-white py-4 rounded-xl text-center font-bold transition">Escolher Plano</a>
             </div>
         </div>
 
-        <p class="text-slate-600 text-[10px] font-bold uppercase tracking-[0.2em]">Pagamento via Pix ou Cartão // Ativação em até 24 horas</p>
+        <p class="text-slate-600 text-[10px] font-bold uppercase tracking-[0.2em]">Protocolo Auditado • Zero Logs • Sua privacidade é lei</p>
     </main>
 
     <section id="como-funciona" class="w-full max-w-5xl px-8 py-24 border-t border-white/5">
-        <h2 class="text-white text-3xl md:text-5xl font-800 tracking-tighter mb-16 text-center italic uppercase">Como <span class="text-blue-500">funciona?</span></h2>
+        <h2 class="text-white text-3xl md:text-5xl font-800 tracking-tighter mb-16 text-center italic uppercase">Segurança <span class="text-blue-500">Total</span></h2>
         
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div class="flex flex-col gap-4">
-                <span class="step-number text-5xl font-800 italic tracking-tighter">01.</span>
-                <h3 class="text-white font-bold text-xl uppercase italic tracking-tighter">Escolha seu Plano</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Assine o plano ideal para sua demanda. Após a confirmação do pagamento, preparamos sua infraestrutura.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+            <div>
+                <div class="text-blue-500 flex justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                </div>
+                <h3 class="text-white font-bold text-lg mb-2 uppercase italic tracking-tighter font-800">Criptografia Forte</h3>
+                <p class="text-slate-500 text-sm">Seus dados são protegidos por algoritmos de última geração, tornando impossível a interceptação por terceiros ou provedores.</p>
             </div>
             
-            <div class="flex flex-col gap-4">
-                <span class="step-number text-5xl font-800 italic tracking-tighter">02.</span>
-                <h3 class="text-white font-bold text-xl uppercase italic tracking-tighter">Receba sua Chave</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Enviaremos via WhatsApp ou E-mail sua chave de acesso exclusiva (ss://) auditada pelo protocolo Outline.</p>
+            <div>
+                <div class="text-blue-500 flex justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <h3 class="text-white font-bold text-lg mb-2 uppercase italic tracking-tighter font-800">Política Zero Log</h3>
+                <p class="text-slate-500 text-sm">O que você faz online é problema seu. Não guardamos históricos de navegação, horários de conexão ou dados de tráfego.</p>
             </div>
 
-            <div class="flex flex-col gap-4">
-                <span class="step-number text-5xl font-800 italic tracking-tighter">03.</span>
-                <h3 class="text-white font-bold text-xl uppercase italic tracking-tighter">Conecte e Navegue</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Utilize o <a target="_blank" href="https://getoutline.org/pt-BR/get-started/#step-3" class="hover:text-blue-500 transition">app oficial da Outline</a> no PC ou Celular. Basta colar sua chave e ativar sua soberania digital.</p>
+            <div>
+                <div class="text-blue-500 flex justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h3 class="text-white font-bold text-lg mb-2 uppercase italic tracking-tighter font-800">Infra Nacional</h3>
+                <p class="text-slate-500 text-sm">Seus dados não saem do Brasil sem sua vontade. Operamos em data centers nacionais protegidos pela LGPD.</p>
             </div>
+        </div>
+    </section>
+
+    <section id="downloads" class="w-full max-w-5xl px-8 py-24 border-t border-white/5 bg-gradient-to-b from-transparent to-blue-500/[0.02]">
+        <div class="text-center mb-16">
+            <h2 class="text-white text-3xl md:text-5xl font-800 tracking-tighter mb-4 italic uppercase">Disponível para <span class="text-blue-500">todos os seus dispositivos</span></h2>
+            <p class="text-slate-500 max-w-2xl mx-auto">Utilizamos a infraestrutura do App Outline (Jigsaw/Google). Um aplicativo leve, sem anúncios e de código aberto.</p>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <a href="https://getoutline.org/pt/get-started/#step-2" target="_blank" class="card-plan p-8 rounded-3xl flex flex-col items-center gap-4 group">
+                <svg class="w-12 h-12 text-slate-500 group-hover:text-blue-500 transition" fill="currentColor" viewBox="0 0 24 24"><path d="M0 3.449L9.75 2.1V11.7H0V3.449zm0 17.1L9.75 21.9V12.3H0v8.249zM10.5 1.95L24 0v11.7H10.5V1.95zM10.5 22.05V12.3H24v11.7l-13.5-1.95z"/></svg>
+                <span class="text-white font-bold text-sm">Windows</span>
+            </a>
+            
+            <a href="https://play.google.com/store/apps/details?id=org.outline.android.client" target="_blank" class="card-plan p-8 rounded-3xl flex flex-col items-center gap-4 group">
+                <svg class="w-12 h-12 text-slate-500 group-hover:text-green-500 transition" fill="currentColor" viewBox="0 0 24 24"><path d="M17.523 15.3414c-.5511 0-.9993-.4482-.9993-.9993s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993s-.4482.9993-.9993.9993m-11.046 0c-.5511 0-.9993-.4482-.9993-.9993s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993s-.4482.9993-.9993.9993m11.4045-6.024l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.4233 13.8533 8.0531 12 8.0531c-1.8533 0-3.5902.3702-5.1374.8927l-2.0223-3.503a.416.416 0 00-.5676-.1521.416.416 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1859.4532 14.3971.0406 18.1555a.4152.4152 0 00.3297.452.4152.4152 0 00.452-.3297c.3824-3.4805 3.342-6.1731 6.9416-6.1731s6.5592 2.6926 6.9416 6.1731a.4152.4152 0 00.452.3297.4152.4152 0 00.3297-.452c-.4126-3.7584-2.6483-6.9696-6.0755-8.8381"/></svg>
+                <span class="text-white font-bold text-sm">Android</span>
+            </a>
+
+            <a href="https://itunes.apple.com/app/outline-app/id1356177741" target="_blank" class="card-plan p-8 rounded-3xl flex flex-col items-center gap-4 group">
+                <svg class="w-12 h-12 text-slate-500 group-hover:text-white transition" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.1 2.48-1.34.03-1.77-.79-3.29-.79-1.53 0-1.99.77-3.27.82-1.31.05-2.32-1.32-3.15-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.89 1.22-2.11 1.09-3.33-1.04.04-2.3.7-3.05 1.57-.67.77-1.26 2.02-1.1 3.2 1.15.09 2.31-.62 3.06-1.44z"/></svg>
+                <span class="text-white font-bold text-sm">iOS / Mac</span>
+            </a>
+
+            <a href="https://getoutline.org/pt/get-started/#step-2" target="_blank" class="card-plan p-8 rounded-3xl flex flex-col items-center gap-4 group">
+                <svg class="w-12 h-12 text-slate-500 group-hover:text-orange-500 transition" fill="currentColor" viewBox="0 0 24 24"><path d="M11.612 0C10.435 0 9.24.234 8.016.71c-1.396.542-2.392 1.527-2.618 2.585-.1.464-.04 1.026.175 1.638 1.15 3.284 3.737 4.965 5.922 4.965 2.184 0 4.771-1.68 5.921-4.965.216-.612.276-1.174.176-1.638-.226-1.058-1.222-2.043-2.618-2.585C13.75.234 12.554 0 11.612 0zm-1.815 11.231c-1.135 0-2.315.11-3.488.358-1.53.324-2.593 1.023-2.593 1.77 0 .341.22.662.623.953.535.385 1.345.694 2.302.915-1.558.74-2.73 1.66-2.73 2.646 0 1.24 1.838 2.247 4.106 2.247 1.114 0 2.126-.242 2.87-.638.1.185.228.36.386.516l2.123 2.123c.316.316.828.316 1.144 0l2.123-2.123a.807.807 0 00.237-.571c0-.214-.085-.419-.237-.571l-1.488-1.488c.954-.251 1.76-.583 2.314-.99.378-.278.58-.58.58-.895 0-.912-.992-1.777-2.362-2.483.91-.212 1.673-.501 2.179-.85.395-.272.607-.56.607-.862 0-.747-1.063-1.446-2.593-1.77-1.173-.248-2.353-.358-3.488-.358z"/></svg>
+                <span class="text-white font-bold text-sm">Linux</span>
+            </a>
+        </div>
+
+        <div class="mt-12 p-6 bg-white/[0.02] border border-white/5 rounded-2xl text-center">
+            <p class="text-slate-400 text-sm">
+                <span class="text-blue-500 font-bold">Importante:</span> A OpaVPN fornece a <span class="text-white">infraestrutura e as chaves de acesso</span>. 
+                Os aplicativos são desenvolvidos pela equipe Outline e auditados por empresas de segurança independentes, garantindo que seu tráfego seja privado de ponta a ponta.
+            </p>
         </div>
     </section>
 
     <footer class="w-full py-16 border-t border-white/5 flex flex-col items-center gap-4 text-center">
         <div class="text-slate-700 text-[10px] font-extrabold uppercase tracking-[0.5em]">
-            OPAVPN // Infraestrutura Brasileira Independente
+            OPAVPN // Segurança Brasileira Independente
         </div>
         <div class="text-[9px] text-slate-800 uppercase tracking-widest font-bold">
             contato@opavpn.com.br
